@@ -10,6 +10,13 @@ This will be used as a foundation for strengthening both VHDL and Verilog HDL sk
 
 This file will be updated during the course of project's lifecycle.
 
+| Project 0: Power Up |
+
+This project describes how to provide power to the EBAZ4205.
+This is just one of many ways to do it (I view it as the easy less expensive vay).
+There are three Data pin sections for the EBAZ4205, and each one has a power and ground pin that can be used to power the entire board.
+There needs to be a 1 amp current provided to power up this board. (I found this information through a link I will provide in a later update to this project)
+
 
 | Project 1: Setup |
 
