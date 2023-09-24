@@ -5,6 +5,36 @@ This GitHub Repository is used for FPGA Development with the EBAZ4205.
 (3) Early projects will only focus on the PL (Programmable Logic)
 (4) Projects will demonstrate mastery of communication protocols
 
-Once a firm understanding is acquired for this development board larger SoC related projects will be carried out with this board. This will be used as a foundation for strengthening both VHDL and Verilog HDL skills since the EBAZ4205 PL can interpret both HDL languages.
+Once a firm understanding is acquired for this development board larger SoC related projects will be carried out with this board. 
+This will be used as a foundation for strengthening both VHDL and Verilog HDL skills since the EBAZ4205 PL can interpret both HDL languages.
 
 This file will be updated during the course of project's lifecycle.
+
+
+| Project 1: Setup |
+
+This project focuses on the setup of the Vivado Synthesis tool with regards to the EBAZ4205 FPGA Development Board.
+The EBAZ4205 FPGA is a custom development board, meaning it is not provided in Vivado's known list of FPGA board files.
+So this FPGA needs custom board files to be provided to Vivado in order for the EBAZ4205 to have HDL projects uploaded to it.
+For this project the Vivado 2020.1 version will be used for this purpose.
+
+The custom board files consist of the following:
+board.xml - How the EBAZ4205 internal chips and components communicate with one another.
+preset.xml - The preset file for the custom board
+part0_pins.xml - How parts are configured with pins
+ebaz4205.jpg - Picture of the FPGA Development board
+
+When these files are created and located in '<tools>/Xilinx/Vivado/2020.1/data/boards/board_files/ebaz4205/1.0/*', Vivado
+ successfully recognizes the custom board in the New Project Wizard.
+
+If the custom board is not showing up in the New Project Wizard then you can use the 'validate_board_files' tcl command
+ in the Vivado GUI. Make sure though to include the proper <!DOCTYPE ... > just below the <?xml /> tag to be able to see
+ the xml error messages.
+
+This Project will be returned to later to explore this feature with other versions of the Vivado Synthesis tool.
+
+| Project 2: AND2 |
+
+This project will try to recreate the example project found on the internet for a simple AND gate.
+
+ 
