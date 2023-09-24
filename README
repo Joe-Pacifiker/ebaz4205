@@ -1,0 +1,10 @@
+This GitHub Repository is used for FPGA Development with the EBAZ4205.
+
+(1) Vivado 2020.1 will be used in conjunction with Ubuntu 18.04.1
+(2) Custom board files are borrowed from another github repository ...
+(3) Early projects will only focus on the PL (Programmable Logic)
+(4) Projects will demonstrate mastery of communication protocols
+
+Once a firm understanding is acquired for this development board larger SoC related projects will be carried out with this board. This will be used as a foundation for strengthening both VHDL and Verilog HDL skills since the EBAZ4205 PL can interpret both HDL languages.
+
+This file will be updated during the course of project's lifecycle.
